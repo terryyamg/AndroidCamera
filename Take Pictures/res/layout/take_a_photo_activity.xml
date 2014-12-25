@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+  
+ <Button
+        android:id="@+id/autoFocus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:background="#00000000" />
+ 
+    <Button
+        android:id="@+id/takePhotoBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:onClick="takePhoto"
+        android:text="拍照"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/hidePhotoBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:onClick="hidePhoto"
+        android:text="拍好了"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/picList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="照片列表" />
+
+</FrameLayout>
