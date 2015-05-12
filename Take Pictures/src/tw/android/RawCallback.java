@@ -10,7 +10,7 @@ public class RawCallback implements PictureCallback {
 
     @Override
     public void onPictureTaken(byte[] data, Camera camera) {
-        Log.d(TAG, "³B²z Raw data...");
+        Log.d(TAG, "è™•ç† Raw data...");
     }
 
 }
