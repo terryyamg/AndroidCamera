@@ -9,6 +9,6 @@ public class ShCallback implements ShutterCallback {
 
     @Override
     public void onShutter() {
-        Log.d(TAG, "�Ұʧ֪�...");
+        Log.d(TAG, "啟動快門...");
     }
 }
