@@ -18,10 +18,10 @@ public class CameraCallback implements Callback {
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
-        Log.d(TAG, "±Ò°Ê¬Û¾÷...");
+        Log.d(TAG, "å•Ÿå‹•ç›¸æ©Ÿ...");
         this.carema = Camera.open();
         try {
-            Log.d(TAG, "³]©w¹wÄıµøµ¡");
+            Log.d(TAG, "è¨­å®šé è¦½è¦–çª—");
             this.carema.setPreviewDisplay(holder);
         }
         catch (IOException e) {
@@ -31,14 +31,14 @@ public class CameraCallback implements Callback {
 
     public void surfaceChanged(SurfaceHolder holder, int format, int width,
             int height) {
-        Log.d(TAG, "¶}©l¹wÄı...");
+        Log.d(TAG, "é–‹å§‹é è¦½...");
         this.carema.startPreview();
     }
 
     public void surfaceDestroyed(SurfaceHolder holder) {
-        Log.d(TAG, "°±¤î¹wÄı...");
+        Log.d(TAG, "åœæ­¢é è¦½...");
         this.carema.stopPreview();
-        Log.d(TAG, "ÄÀ©ñ¬Û¾÷¸ê·½...");
+        Log.d(TAG, "é‡‹æ”¾ç›¸æ©Ÿè³‡æº...");
         this.carema.release();
         this.carema = null;
     }
